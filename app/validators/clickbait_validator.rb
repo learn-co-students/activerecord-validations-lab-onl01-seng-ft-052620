@@ -4,7 +4,7 @@ class ClickbaitValidator < ActiveModel::Validator
         clickbait = ["Won't Believe", "Secret", "Top", "Guess"]
            if record.title
         unless clickbait.any?{|array| record.title.match?(array)} 
-          record.errors[:title] << 'Title is not clickbaity'
+          record.errors[:title] << 'Title is not clickbait'
           end
         end
       end
