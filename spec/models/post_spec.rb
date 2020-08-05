@@ -11,6 +11,7 @@ RSpec.describe Post, type: :model do
       category: "Fiction"
     }
   end
+  
 
   let(:valid_post) { Post.new(valid_attrs) }
   let(:missing_title) { Post.new(valid_attrs.except(:title)) }
